@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>chin Wag</title>
+    <link rel="stylesheet" href="./assets/css/style.css ">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         cascade: '#90AEAF',
-                        cadet : '#4F6367'
+                        cadet: '#4F6367',
+                        surf: '#B8D8D8',
+                        charcoal: '#2A3739'
                     },
                     fontSize: {
                         '5xl': "45px"
@@ -24,28 +27,264 @@
 </head>
 
 <body>
+    <!-- Growth Section -->
     <section class="bg-cascade max-lg:py-24 max-md:py-14 py-28">
         <div class="max-w-[1140px] mx-auto px-3">
             <div class="flex max-lg:gap-y-9 max-lg:px-6 max-md:px-4 flex-wrap">
                 <div class="w-6/12 max-lg:w-full justify-center items-center flex">
                     <div>
-                        <h1 class="text-5xl text-white leading-[132%] font-extrabold max-lg:text-4xl max-md:text-3xl ">Save on Cost.
+                        <h1 class="text-5xl text-white leading-[132%] font-extrabold max-lg:text-4xl max-md:text-3xl ">
+                            Save on Cost.
                             <span class="block"> Supercharge Your Growth </span>
                         </h1>
-                        <p class="text-base max-lg:text-sm max-md:text-xs text-white mt-3.5 leading-[170%]">Secure the best rates and get rewarded for on-time payments with 5% discount against your
+                        <p class="text-base max-lg:text-sm max-md:text-xs text-white mt-3.5 leading-[170%]">Secure the
+                            best rates and get rewarded for on-time payments with 5% discount against your
                             next invoice. The equivalent to 1 free days work, for 20 days paid.</p>
-                            <button class="py-4 px-7 max-md:py-3 max-sm:px-6 max-lg:text-sm max-md:text-xs bg-cadet mt-10 rounded-[65px] text-white font-bold border border-cadet hover:bg-white transition-all duration-300 hover:text-cadet">Book a Demo</button>
+                        <button
+                            class="py-4 px-7 max-md:py-3 max-sm:px-6 max-lg:text-sm max-md:text-xs bg-cadet mt-10 rounded-[65px] text-white font-bold border border-cadet hover:bg-white transition-all duration-300 hover:text-cadet">Book
+                            a Demo</button>
                     </div>
                 </div>
                 <div class="w-6/12 max-lg:w-full">
-                    <img class="h-[440px] w-full max-lg:h-full" src="./assets/images/png/markting.png" alt="images">
+                    <img class="h-[440px] w-full max-lg:h-full" src="./assets/images/WebP/markting.webp" alt="images">
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        
+    <!-- Conversations Section -->
+    <section class="py-32 bg-[#BBFFFF4D]">
+        <div class="max-w-[1140px] mx-auto px-3">
+            <div class="heading">
+                <h1
+                    class="text-5xl text-center text-black leading-[132%] font-extrabold max-lg:text-4xl max-md:text-3xl">
+                    Share or Connect.
+                    <span class="block"> Create Conversations that Count </span>
+                </h1>
+                <div class="max-w-[895px] mt-10 gap-y-8 mx-auto flex flex-wrap">
+                    <div class="w-6/12 px-5 max-md:w-full">
+                        <div class="bg-cadet rounded-md flex flex-col justify-center items-center">
+                            <p class="text-white max-w-[344px] text-center mt-10">Want to receive applications for your
+                                requirement in 48hrs?</p>
+                            <button
+                                class="py-4 rounded-[138px] my-9 mx bg-surf text-charcoal font-bold px-[85px] hover:bg-charcoal hover:text-surf transition-all duration-300 border border-surf">Pseudonymously
+                                Publish</button>
+                        </div>
+                    </div>
+                    <div class="w-6/12 px-5 max-md:w-full">
+                        <div class="bg-cadet rounded-md flex flex-col justify-center items-center">
+                            <p class="text-white max-w-[328px] text-center mt-10">Do you have available resources and
+                                trusted expertise?</p>
+                            <button
+                                class="py-4 rounded-[138px] my-9 mx bg-surf text-charcoal font-bold px-[85px] hover:bg-charcoal hover:text-surf transition-all duration-300 border border-surf">Apply
+                                for Verification</button>
+                        </div>
+                    </div>
+                    <div class="w-6/12 max-lg:w-full"></div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- accordin -->
+    <section class=" ">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-black text-center mb-12">FAQ’S</h1>
+            <div class="max-w-3xl mx-auto">
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>What’s our secret?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5 rotate-180"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="accordion-icon-minus h-5 w-5 hidden rotate-180" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>What do we mean by a 'Chin-wag'?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>What is pseudonymity and how does it benefit Chin-wag Customers?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>I require resources, can Chin-wag really save me money?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>How does Chin-wag deliver results to the Customer?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>How does chin-wag generate revenue?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <footer class="footer_bg_img">
+            <div class="flex items-center justify-center flex-col md:pt-11 sm:pt-9 pt-8">
+                <a href="/"><img  src="./assets/images/WebP/Footer-logo.webp" alt="logo" class="max-sm:hidden max-w-36 rotated-anima" /></a>
+                <a href="/"><img src="./assets/images/WebP/Footer-logo-text.webp" alt="logo" class="max-sm:hidden mt-4" /></a>
+
+                <a href="/"><img src="./assets/images/WebP/Footer-logo-text.webp" alt="logo" class="sm:hidden" /></a>
+                <button
+                    class="bg-[#88ADAE] mb-8 md:mt-9 sm:mt-4 mt-4 sm:py-5 sm:px-8 py-2 px-5 rounded-full text-white sm:font-normal font-bold sm:text-base text-[8px] leading-[150%] border-[2px] border-[#88ADAE] hover:bg-[#4F6367] hover:ease-linear transition-all">
+                    Book a Demo
+                </button>
+                <p
+                    class="text-center border-t-[#C8C8C8;] border-t-2 w-full py-5 text-sm font-normal leading-[210%] text-white opacity-[60%] max-sm:hidden">
+                    © CHIN WAG INTERNATIONAL LIMITED t/a Chin-wag.com 2022, All Rights
+                    Reserved.
+                </p>
+                <p
+                    class="text-center border-t-[#C8C8C8;] border-t-2 w-full py-5 text-[10px] font-normal leading-[210%] text-white opacity-[60%] sm:hidden">
+                    ©chin-wag 2022, All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </footer>
+    <script>
+        document.querySelectorAll('.accordion-header').forEach((header) => {
+            header.addEventListener('click', () => {
+                document.querySelectorAll('.accordion-item').forEach((item) => {
+                    const content = item.querySelector('.accordion-content');
+                    const plusIcon = item.querySelector('.accordion-icon-plus');
+                    const minusIcon = item.querySelector('.accordion-icon-minus');
+                    if (item !== header.parentElement) {
+                        content.classList.add('hidden');
+                        plusIcon.classList.remove('hidden');
+                        minusIcon.classList.add('hidden');
+                    }
+                });
+                const content = header.nextElementSibling;
+                const plusIcon = header.querySelector('.accordion-icon-plus');
+                const minusIcon = header.querySelector('.accordion-icon-minus');
+                content.classList.toggle('hidden');
+                plusIcon.classList.toggle('hidden');
+                minusIcon.classList.toggle('hidden');
+                plusIcon.classList.toggle('rotate-180');
+                minusIcon.classList.toggle('rotate-180');
+
+            });
+        });
+    </script>
 </body>
 
 </html>
