@@ -42,6 +42,6 @@ body {
 
 @media (max-width:1024px) {
   .position_lg_unset {
-    position: unset;
+    position: unset !important;
   }
 }
