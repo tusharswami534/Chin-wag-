@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>chin Wag</title>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        Cascade: '#90AEAF',
+                        cascade: '#90AEAF',
+                        cadet: '#4F6367',
+                        surf: '#B8D8D8',
+                        charcoal: '#2A3739',
+                        ceramic: '#B8D8D8',
                     }
                 }
             }
@@ -20,7 +25,486 @@
 </head>
 
 <body>
+    <!-- header -->
+    <section>
+        <div class="max-w-[1140px] px-3 flex mt-3 justify-between relative z-10 mx-auto">
+            <div class="logo max-sm:ms-2">
+                <img class="max-sm:max-w-[32px]" src="./assets/images/svg/logo.svg" alt="logo">
+            </div>
+            <div class="flex  gap-5 ">
+                <button
+                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-[#7A9E9F] bg-[#7A9E9F] rounded-full text-white lg:text-base text-[14px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Require
+                    Resources?</button>
+                <button
+                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-[#7A9E9F] bg-[#7A9E9F] rounded-full text-white lg:text-base text-[14px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Provide
+                    Resources?</button>
+            </div>
+        </div>
+        <div class="row  flex justify-between lg:flex-row flex-col">
+            <div class="lg:w-6/12 w-full relative -top-20">
+                <div class="bg-[#4F6367] lg:min-h-screen h-[207px] w-full rounded-e-2xl px-20">
+                    <div class="hero_img ">
+                        <img class="absolute lg:top-40 top-28 lg:-end-28 end-3 z-10 md:max-w-[715px] max-w-[94%]"
+                            src="./assets/images/png/top-sec-img.png" alt="image">
+                        <img class="absolute lg:top-36 top-[100px]  lg:-end-20  end-0  max-sm:max-w-[52px]"
+                            src="./assets/images/png/doted-.png" alt="dote">
 
+                    </div>
+                </div>
+            </div>
+            <div
+                class="lg:w-6/12 w-full relative  flex flex-col justify-center items-center lg:pt-0 sm:pt-64 pt-24 px-10">
+                <img class="  max-lg:hidden top-0 absolute end-4" src="./assets/images/png/down-arrow.png" alt="">
+                <h1
+                    class="lg:text-[46px] text-[30px] leading-[50px] font-extrabold max-w-[419px] mx-auto max-lg:mt-10 max-lg:max-w-[273px] max-lg:leading-8">
+                    Introductions that save you
+                    money.</h1>
+                <p
+                    class="max-w-[409px] mx-auto mt-8  lg:text-base max-lg:text-center text-sm font-light max-lg:max-w-[290px] max-lg:mt-4 ">
+                    Avoid inflated
+                    costs, keep your
+                    identity hidden
+                    while searching for
+                    Partners, and get rewarded for paying on-time.</p>
+                <div class="pt-11"><button
+                        class="py-4 px-5 border border-[#7A9E9F] -ms-48 max-lg:ms-0 rounded-full bg-[#7A9E9F]  text-white lg:text-base text-[14px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Publish
+                        your
+                        Requirement</button></div>
+                <img class="max-lg:hidden bottom-[7%] absolute end-0" src="./assets/images/png/mouse-scrol.png"
+                    alt="scroll">
+            </div>
+
+        </div>
+    </section>
+    <!-- Card Section -->
+    <section class=" relative flex justify-center flex-col items-center ">
+        <div class="max-w-[1140px] w-full mx-auto">
+            <img class=" absolute top-52 left-0 " src="/assets/images/png/cross.png" alt="">
+            <img class="absolute bottom-0 right-12" src="/assets/images/png/circle.png" alt="">
+            <h1
+                class="font-black mt-40 max-lg:mt-32 max-md:mt-28 max-sm:mt-16 leading-[60px] text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl text-center font-robort ">
+                Benefit from the Power
+                of
+                Choice.<br>
+                Built for Startups, SMEs & Enterprise</h1>
+            <div class="flex-wrap flex mt-14 max-lg:mt-12 max-md:mt-10 gap-y-6 justify-center items-center">
+                <div class="w-4/12 px-3 max-lg:w-6/12 max-md:w-full">
+                    <div
+                        class="w-full flex justify-center border p-7 border-[#D4D7D7] rounded-lg flex-col items-center">
+                        <img src="./assets/images/png/card-section-first-images.png" alt="images">
+                        <p class="font-semibold text-[25px] text-center mt-3.5">On-demand Talent </p>
+                        <p class="font-light text-base text-[#4D4D4D] text-center mt-2.5 max-w-[309px] leading-[175%] ">
+                            Review candidates and interview directly. Team extensions available from 1+ hires.
+                            Supercharge your growth with a flexible workforce</p>
+                    </div>
+                </div>
+                <div class="w-4/12 px-3 max-lg:w-6/12 max-md:w-full">
+                    <div
+                        class="w-full flex justify-center border p-7 border-[#D4D7D7] rounded-lg flex-col items-center">
+                        <img src="./assets/images/png/card-section-first-images.png" alt="images">
+                        <p class="font-semibold text-[25px] text-center mt-3.5">Service Teams</p>
+                        <p class="font-light text-base text-[#4D4D4D] text-center mt-2.5 max-w-[309px] leading-[175%] ">
+                            Connect with the best available expertise for your current project. Save money and time with
+                            a partner who understands your product.</p>
+                    </div>
+                </div>
+                <div class="w-4/12 px-3 max-lg:w-6/12 max-md:w-full">
+                    <div
+                        class="w-full flex justify-center border p-7 border-[#D4D7D7] rounded-lg flex-col items-center">
+                        <img src="./assets/images/png/card-section-2nd-images.png" alt="images">
+                        <p class="font-semibold text-[25px] text-center mt-3.5">Product Development </p>
+                        <p class="font-light text-base text-[#4D4D4D] text-center mt-2.5 max-w-[309px] leading-[175%] ">
+                            Benefit from expert team efficiency and keep your focus on task by outsourcing Lead
+                            Generation, Sales, HR, Marketing and more.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- 3rd section -->
+    <section class="flex relative py-20 max-sm:py-16">
+        <img class="absolute top-20 left-0" src="/assets/images/png/circle.png" alt="">
+        <div class="max-w-[1140px] mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-6/12  max-lg:w-full flex justify-center flex-col">
+                    <h2 class="  font-black leading-[59.35px] text-5xl ">Stay Private. Stay<br> in
+                        Control.</h2>
+                    <p class=" font-light text-base">Chin-wag empowers you with the ability to request<br>
+                        information from the resource marketplace without<br> revealing your
+                        Identity.</p>
+                    <p class=" font-light text-base">Review applications and schedule introductions with<br> total
+                        discretion.</p>
+                </div>
+                <div class="w-6/12 max-lg:w-full">
+                    <div class="relative">
+                        <img class="me-2" src="./assets/images/png/3rd-section-images.png" alt="">
+                        <img src="./assets/images/png/bg-shadow.png" alt="shadow" class="absolute top-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4th section -->
+    <section class="flex relative py-20 max-sm:py-16">
+        <img class="absolute bottom-60 right-10" src="/assets/images/png/cross.png" alt="">
+        <div class="max-w-[1140px] mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-6/12 max-lg:w-full px-3 flex justify-center items-center ">
+                    <img class="me-2" src="./assets/images/png/4th-section-complete.png" alt="">
+                </div>
+                <div class="w-6/12 max-lg:w-full flex justify-center  px-3 flex-col ">
+                    <h2 class="  font-black leading-[59.35px] text-5xl  ">Commitment to Transparency</h2>
+                    <p class=" font-light text-base mt-2">Marketing platforms, and agencies, can inadvertently<br> inflate
+                        your partnership costs by charging hidden<br> fees.</p>
+                    <p class=" font-light text-base mt-2">We’ve put a stop to that problem.</p>
+                    <p class=" font-light text-base mt-2">With charge-free & efficient matchmaking, we ensure<br>
+                        partnership costs are never more than they would have<br> otherwise
+                        been, even if created directly or through<br> referral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Growth Section -->
+    <section class="bg-cascade max-lg:py-24 max-md:py-14 py-28">
+        <div class="max-w-[1140px] mx-auto px-3">
+            <div class="flex max-lg:gap-y-9 max-lg:px-6 max-md:px-4 flex-wrap">
+                <div class="w-6/12 max-lg:w-full justify-center items-center flex">
+                    <div>
+                        <h1 class="text-5xl text-white leading-[132%] font-extrabold max-lg:text-4xl max-md:text-3xl ">
+                            Save on Cost.
+                            <span class="block"> Supercharge Your Growth </span>
+                        </h1>
+                        <p class="text-base max-lg:text-sm max-md:text-xs text-white mt-3.5 leading-[170%]">Secure the
+                            best rates and get rewarded for on-time payments with 5% discount against your
+                            next invoice. The equivalent to 1 free days work, for 20 days paid.</p>
+                        <button
+                            class="py-4 px-7 max-md:py-3 max-sm:px-6 max-lg:text-sm max-md:text-xs bg-cadet mt-10 rounded-[65px] text-white font-bold border border-cadet hover:bg-white transition-all duration-300 hover:text-cadet">Book
+                            a Demo</button>
+                    </div>
+                </div>
+                <div class="w-6/12 max-lg:w-full">
+                    <img class="h-[440px] w-full max-lg:h-full" src="./assets/images/WebP/markting.webp" alt="images">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Time line -->
+    <section style="background-image: url(./assets/images/png/Time_line_bg_images.png);" class="py-20">
+        <p class="text-xl leading-[117%] text-cadet text-center">The Best Business Partnerships</p>
+        <h1 class="text-charcoal font-extrabold text-5xl text-center">Start with a Chin-Wag</h1>
+        <div class="max-w-[1140px] mx-auto min-h-[439px] flex flex-col  ">
+            <div
+                class="flex mt-20 px-12 gap-y-24 flex-wrap justify-center items-center max-lg:flex-col flex-row relative">
+                <img src="./assets/images/png/ZigZag_line.png" alt="ZigZag_line"
+                    class="absolute top-0 block max-lg:hidden">
+                <div class="h-[750px] left-[14%]  absolute w-2 bg-[#B8D8D8] hidden max-lg:block"></div>
+                <div class="w-2/12 max-lg:w-full relative ">
+                    <div
+                        class="flex justify-center position_lg_unset max-lg:flex-row max-lg:justify-start absolute top-[-48px]  items-center flex-col">
+                        <div class="relative">
+                            <img src="./assets/images/png/Time_line_first_images.png" alt="Time_line_first_images"
+                                class="relative z-10">
+                            <img src="./assets/images/png/shadow.png" alt="shadow" class="absolute  top-5">
+                        </div>
+                        <p class="text-center mt-5 max-lg:text-start max-lg:ml-16 text-base max-lg:text-lg ">Describe
+                            your <span class="block"> Business </span> </p>
+                    </div>
+                </div>
+                <div class="w-2/12 max-lg:w-full relative  ">
+                    <div
+                        class="flex justify-center position_lg_unset max-lg:flex-row max-lg:justify-start absolute left-[-33px] top-[34px]  items-center flex-col">
+                        <div class="relative">
+                            <img src="./assets/images/png/Time_line_second_images.png" alt="Time_line_first_images"
+                                class="relative z-10">
+                            <img src="./assets/images/png/shadow.png" alt="shadow" class="absolute  top-5">
+                        </div>
+                        <p
+                            class="text-center mt-5 max-lg:text-start max-lg:ml-16 max-w-[204px] text-base max-lg:text-lg ">
+                            Pseudonymously Publish your Requirement </p>
+                    </div>
+                </div>
+                <div class="w-2/12 max-lg:w-full relative ">
+                    <div
+                        class="flex justify-center position_lg_unset max-lg:flex-row max-lg:justify-start absolute top-[-48px] left-2  items-center flex-col">
+                        <div class="relative">
+                            <img src="./assets/images/png/Time_line_first_images.png" alt="Time_line_first_images"
+                                class="relative z-10">
+                            <img src="./assets/images/png/shadow.png" alt="shadow" class="absolute  top-5">
+                        </div>
+                        <p
+                            class="text-center mt-5 max-lg:text-start max-lg:ml-16 max-w-[177px] text-base max-lg:text-lg ">
+                            Schedule Introductions with Providers of
+                            Interest</p>
+                    </div>
+                </div>
+                <div class="w-2/12 max-lg:w-full relative">
+                    <div
+                        class="flex justify-center left-[33px] translate-x-1 position_lg_unset max-lg:flex-row max-lg:justify-start top-[42px] absolute  items-center flex-col">
+                        <div class="relative">
+                            <img src="./assets/images/png/Time_line_first_images.png" alt="Time_line_first_images"
+                                class="relative z-10">
+                            <img src="./assets/images/png/shadow.png" alt="shadow" class="absolute  top-5">
+                        </div>
+                        <p
+                            class="text-center mt-5 max-lg:text-start max-lg:ml-16 max-w-[161px] text-base max-lg:text-lg ">
+                            Negotiate Engagement Terms Directly </p>
+                    </div>
+                </div>
+                <div class="w-2/12 max-lg:w-full relative ">
+                    <div
+                        class="flex justify-center position_lg_unset max-lg:flex-row max-lg:justify-start absolute left-[60px] top-[-35px] items-center flex-col">
+                        <div class="relative">
+                            <img src="./assets/images/png/Time_line_first_images.png" alt="Time_line_first_images"
+                                class="relative z-10">
+                            <img src="./assets/images/png/shadow.png" alt="shadow" class="absolute  top-5">
+                        </div>
+                        <p
+                            class="text-center mt-5 max-lg:text-start max-lg:ml-16 max-w-[121px]  text-base max-lg:text-lg ">
+                            Benefit from
+                            Pay-on-Time Rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Conversations Section -->
+    <section style="background-image: url(./assets/images/png/Time_line_bg_images.png);"
+        class="py-32 relative after:absolute after:w-full after:h-full after:bg-[#BBFFFF4D] after:top-0 ">
+        <div class="max-w-[1140px] relative z-10 mx-auto px-3">
+            <div class="heading">
+                <h1
+                    class="text-5xl text-center text-black leading-[132%] font-extrabold max-lg:text-4xl max-md:text-3xl">
+                    Share or Connect.
+                    <span class="block"> Create Conversations that Count </span>
+                </h1>
+                <div class="max-w-[895px] mt-10 gap-y-8 mx-auto flex flex-wrap">
+                    <div class="w-6/12 px-5 max-md:w-full">
+                        <div class="bg-cadet rounded-md flex flex-col justify-center items-center">
+                            <p class="text-white max-w-[344px] text-center mt-10">Want to receive applications for your
+                                requirement in 48hrs?</p>
+                            <button
+                                class="py-4 rounded-[138px] my-9 mx bg-surf text-charcoal font-bold px-[85px] hover:bg-charcoal hover:text-surf transition-all duration-300 border border-surf">Pseudonymously
+                                Publish</button>
+                        </div>
+                    </div>
+                    <div class="w-6/12 px-5 max-md:w-full">
+                        <div class="bg-cadet rounded-md flex flex-col justify-center items-center">
+                            <p class="text-white max-w-[328px] text-center mt-10">Do you have available resources and
+                                trusted expertise?</p>
+                            <button
+                                class="py-4 rounded-[138px] my-9 mx bg-surf text-charcoal font-bold px-[85px] hover:bg-charcoal hover:text-surf transition-all duration-300 border border-surf">Apply
+                                for Verification</button>
+                        </div>
+                    </div>
+                    <div class="w-6/12 max-lg:w-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- accordin -->
+    <section class="py-24 max-lg:py-20 max-md:py-16 max-sm:py-12">
+        <div class="container mx-auto px-3 max-lg:px-5">
+            <h1 class="text-5xl font-black text-center mb-12">FAQ’S</h1>
+            <div class="max-w-3xl mx-auto">
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>What’s our secret?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5 rotate-180"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="accordion-icon-minus h-5 w-5 hidden rotate-180" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>What do we mean by a 'Chin-wag'?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>What is pseudonymity and how does it benefit Chin-wag Customers?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>I require resources, can Chin-wag really save me money?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>How does Chin-wag deliver results to the Customer?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <button
+                        class="accordion-header font-normal w-full flex justify-between items-center rounded border border-solid border-[#CCCCCC] p-4 text-black text-left">
+                        <span>How does chin-wag generate revenue?</span>
+                        <div class="accordion-icons flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-plus h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon-minus h-5 w-5 hidden"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </div>
+
+
+                    </button>
+                    <div class="accordion-content font-light hidden  p-4 text-black opacity-80">
+                        The dictionary definition of a Chin-wag is a friendly conversation'. In our ecosystem, we use it
+                        to describe match-made & zero obligation introductory calls that are hosted by the Supplier when
+                        requested by the Customer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <footer class="footer_bg_img">
+            <div class="flex items-center justify-center flex-col md:pt-11 sm:pt-9 pt-8">
+                <a href="/"><img src="./assets/images/WebP/Footer-logo.webp" alt="logo"
+                        class=" max-w-36 rotated-anima" /></a>
+                <a href="/"><img src="./assets/images/WebP/Footer-logo-text.webp" alt="logo" class="mt-4" /></a>
+
+                <button
+                    class="bg-[#88ADAE] mb-8 md:mt-9 sm:mt-4 mt-4 sm:py-5 sm:px-8 py-2 px-5 rounded-full text-white sm:font-normal font-bold sm:text-base text-[8px] leading-[150%] border-[2px] border-[#88ADAE] hover:bg-[#4F6367] hover:ease-linear transition-all">
+                    Book a Demo
+                </button>
+                <p
+                    class="text-center border-t-[#C8C8C8;] border-t-2 w-full py-5 text-sm font-normal leading-[210%] text-white opacity-[60%] max-sm:hidden">
+                    © CHIN WAG INTERNATIONAL LIMITED t/a Chin-wag.com 2022, All Rights
+                    Reserved.
+                </p>
+                <p
+                    class="text-center border-t-[#C8C8C8;] border-t-2 w-full py-5 text-[10px] font-normal leading-[210%] text-white opacity-[60%] sm:hidden">
+                    ©chin-wag 2022, All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </footer>
+    <!-- js -->
+    <script>
+        document.querySelectorAll('.accordion-header').forEach((header) => {
+            header.addEventListener('click', () => {
+                document.querySelectorAll('.accordion-item').forEach((item) => {
+                    const content = item.querySelector('.accordion-content');
+                    const plusIcon = item.querySelector('.accordion-icon-plus');
+                    const minusIcon = item.querySelector('.accordion-icon-minus');
+                    if (item !== header.parentElement) {
+                        content.classList.add('hidden');
+                        plusIcon.classList.remove('hidden');
+                        minusIcon.classList.add('hidden');
+                    }
+                });
+                const content = header.nextElementSibling;
+                const plusIcon = header.querySelector('.accordion-icon-plus');
+                const minusIcon = header.querySelector('.accordion-icon-minus');
+                content.classList.toggle('hidden');
+                plusIcon.classList.toggle('hidden');
+                minusIcon.classList.toggle('hidden');
+                plusIcon.classList.toggle('rotate-180');
+                minusIcon.classList.toggle('rotate-180');
+
+            });
+        });
+    </script>
 </body>
 
 </html>
