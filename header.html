@@ -1,152 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            cadet: '#4F6367',
-
-                        }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cadet: '#4F6367',
+                        MidGrey: '#4F6367',
+                        RegentGrey: '#7A9E9F',
                     }
                 }
             }
-        </script>
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+        * {
+            font-family: "Roboto Slab", serif;
 
-    <body>
-        <header class="flex justify-between">
-            <div class=" lg:w-5/12 md:w-6/12 sm:w-full w-full rounded-[16px] rounded-s-none  bg-[#4F6367] w-[683px]">
-                <img class="ms-36 pt-[19px] " src="/assets/images/png/header_logo.svg" alt="">
-                <div class="relative">
-                    <img class="absolute top-[110px] -right-[87px]" src="/assets/images/png/doted-.png" alt="">
-                    <img class="relative pb-32 z-1 pt-[118px] max-w-[715px] ms-9"
-                        src="/assets/images/png/top-sec-img.png" alt="">
+        }
+    </style>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section>
+        <div class="max-w-[1140px] px-3 flex justify-between relative z-10 mx-auto">
+            <div class="logo max-sm:ms-2">
+                <img class="max-sm:max-w-[32px]" src="./assets/images/png/header_logo.svg" alt="logo">
+            </div>
+            <div class="flex  gap-5 ">
+                <button
+                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-[#7A9E9F] bg-[#7A9E9F] rounded-full text-white lg:text-base text-[8px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Require
+                    Resources?</button>
+                <button
+                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-[#7A9E9F] bg-[#7A9E9F] rounded-full text-white lg:text-base text-[8px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Provide
+                    Resources?</button>
+            </div>
+        </div>
+        <div class="row  flex justify-between lg:flex-row flex-col">
+            <div class="lg:w-6/12 w-full relative -top-20">
+                <div class="bg-[#4F6367] lg:min-h-screen h-[207px] w-full rounded-e-2xl px-20">
+                    <div class="hero_img ">
+                        <img class="absolute lg:top-40 top-28 lg:-end-28 end-3 z-10 md:max-w-[715px] max-w-[94%]"
+                            src="./assets/images/png/top-sec-img.png" alt="image">
+                        <img class="absolute lg:top-36 top-[100px]  lg:-end-20  end-0  max-sm:max-w-[52px]"
+                            src="./assets/images/png/doted-.png" alt="">
+
+                    </div>
                 </div>
             </div>
-            <div class=" relative lg:w-5/12 md:w-6/12 sm:w-full w-full">
-                <button
-                    class="max-w-[207px] me-5 text-white py-[18.5px] rounded-[100px] mt-[19px] px-[30px]  bg-[#4F6367]">
-                    Require Resources?
-                </button>
-                <button
-                    class="max-w-[207px] py-[18.5px] text-white me-[150px] rounded-[100px] mt-[19px] px-[30px]  bg-[#4F6367]">
-                    Provide Resources?
-                </button>
-                <h2 class="font-black leading-[61.25px] text-[46.44px] max-w-[419px] mt-52">Introductions that save you
-                    money.</h2>
-                <p class="font-light leading-7 text-lg max-w-[409px]">Avoid inflated costs, keep your identity hidden
-                    while searching for Partners, and get rewarded for paying on-time.</p>
-                <button class="py-4 px-8 rounded-full border-2 bg-[#4F6367] text-white mt-7"> Publish your
-                    Requirement</button>
-                <img class="absolute bottom-0 right-0" src="/assets/images/png/mouse-scrol.png" alt="">
-                <img class="absolute top-24 right-4" src="/assets/images/png/down-arrow.png" alt="">
-
+            <div
+                class="lg:w-6/12 w-full relative  flex flex-col justify-center items-center lg:pt-0 sm:pt-64 pt-24 px-10">
+                <img class="  max-lg:hidden top-0 absolute end-0" src="./assets/images/svg/down_arrows.svg" alt="">
+                <h1 class="lg:text-[46px] text-[30px] font-extrabold max-w-[419px] mx-auto">Introductions that save you
+                    money.</h1>
+                <p class="max-w-[409px] mx-auto lg:text-base max-lg:text-center text-sm font-light">Avoid inflated
+                    costs, keep your
+                    identity hidden
+                    while searching for
+                    Partners, and get rewarded for paying on-time.</p>
+                <div class="pt-11"><button
+                        class="py-4 px-5 border border-[#7A9E9F] rounded-full bg-[#7A9E9F]  text-white lg:text-base text-[8px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Publish
+                        your
+                        Requirement</button></div>
+                <img class="max-lg:hidden bottom-[7%] absolute end-0" src="./assets/images/png/mouse-scrol.png"
+                    alt="scroll">
             </div>
-            </div>
-        </header>
+        </div>
+    </section>
 
 
-        <!-- ======3cards========== -->
-        <section class=" relative flex justify-center flex-col items-center ">
+    <!-- ======3cards========== -->
+    <section class=" relative flex justify-center flex-col items-center ">
+        <div class="max-w-[1140px] w-full mx-auto">
             <img class=" absolute top-52 left-0 " src="/assets/images/png/cross.png" alt="">
             <img class="absolute bottom-0 right-12" src="/assets/images/png/circle.png" alt="">
-            <h1 class="font-black mt-[160px] leading-[60px] text-5xl text-center font-robort ">Benefit from the Power
+            <h1 class="font-black mt-40 max-lg:mt-32 max-md:mt-28 max-sm:mt-16 leading-[60px] text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl text-center font-robort ">Benefit from the Power
                 of
                 Choice.<br>
                 Built for Startups, SMEs & Enterprise</h1>
-            <div class="flex mt-[60px] gap-4 justify-center items-center text-center card_parent">
-                <div class=" lg:w-4/12 md:w-6/12 sm:w-full w-full">
-                    <div class="crd-1 border-2 px-7 rounded-lg clode max-w-[364px] ">
-                        <img class="" src="/assets/images/png/crd-1-img.png" alt="">
-                        <h4 class=" -mt-16 leading-[34.62px]  text-2xl font-robort font-semibold text-center">
-                            On-demand Talent
-                        </h4>
-                        <p class="text-center  mb-8 font-light text-base font-robort mt-3 ">Review
-                            candidates and
-                            interview<br>
-                            directly. Team extensions available from<br> 1+ hires. Supercharge your growth
-                            with a<br>
-                            flexible workforce</p>
+            <div class="flex-wrap flex mt-14 max-lg:mt-12 max-md:mt-10 gap-y-6 justify-center items-center">
+                <div class="w-4/12 px-3 max-lg:w-6/12 max-md:w-full">
+                    <div class="w-full flex justify-center border p-7 border-[#D4D7D7] rounded-lg flex-col items-center">
+                        <img src="./assets/images/png/card-section-first-images.png" alt="images">
+                        <p class="font-semibold text-[25px] text-center mt-3.5">On-demand Talent </p>
+                        <p class="font-light text-base text-[#4D4D4D] text-center mt-2.5 max-w-[309px] leading-[175%] ">Review candidates and interview directly. Team extensions available from 1+ hires. Supercharge your growth with a flexible workforce</p>
                     </div>
                 </div>
-                <div class="lg:w-4/12 md:w-6/12 sm:w-full w-full">
-                    <div class="crd-1 border-2 px-7  rounded-lg clode max-w-[364px] ">
-                        <img class="ml-auto -mb-20 mr-auto" src="/assets/images/png/crd-2-img.png" alt="">
-                        <h4 class="  leading-[34.62px] mt-8   text-2xl font-robort font-semibold text-center">
-                            Product Development
-                        </h4>
-                        <p class="text-center mb-8 font-light text-base font-robort mt-3 ">Connect with the
-                            best
-                            available expertise for your current project. Save money and time with a partner
-                            who
-                            understands
-                            your product.</p>
+                <div class="w-4/12 px-3 max-lg:w-6/12 max-md:w-full">
+                    <div class="w-full flex justify-center border p-7 border-[#D4D7D7] rounded-lg flex-col items-center">
+                        <img src="./assets/images/png/card-section-first-images.png" alt="images">
+                        <p class="font-semibold text-[25px] text-center mt-3.5">Service Teams</p>
+                        <p class="font-light text-base text-[#4D4D4D] text-center mt-2.5 max-w-[309px] leading-[175%] ">Connect with the best available expertise for your current project. Save money and time with a partner who understands your product.</p>
                     </div>
                 </div>
-                <div class="lg:w-4/12 md:w-6/12 sm:w-full w-full">
-                    <div class="crd-1 border-2 pt-[20px] px-7 rounded-lg clode max-w-[364px] ">
-                        <img class="ml-auto -mb-20  mr-auto" src="/assets/images/png/crd-3-img.png" alt="">
-                        <h4 class=" -pt-16 mt-8 leading-[34.62px]  text-2xl font-robort font-semibold text-center">
-                            Service Teams
-                        </h4>
-                        <p class="text-center mb-8 font-light text-base font-robort mt-3 ">Benefit from
-                            expert team
-                            efficiency and keep your focus on task by outsourcing Lead Generation, Sales,
-                            HR, Marketing
-                            and
-                            more.</p>
+                <div class="w-4/12 px-3 max-lg:w-6/12 max-md:w-full">
+                    <div class="w-full flex justify-center border p-7 border-[#D4D7D7] rounded-lg flex-col items-center">
+                        <img src="./assets/images/png/card-section-2nd-images.png" alt="images">
+                        <p class="font-semibold text-[25px] text-center mt-3.5">Product Development </p>
+                        <p class="font-light text-base text-[#4D4D4D] text-center mt-2.5 max-w-[309px] leading-[175%] ">Benefit from expert team efficiency and keep your focus on task by outsourcing Lead Generation, Sales, HR, Marketing and more.</p>
                     </div>
                 </div>
-
-
-
+               
             </div>
+        </div>
+    </section>
+    <!-- ======3cards===close=== -->
+    <!-- <section class="flex relative">
+        <img class="absolute top-20 left-0" src="/assets/images/png/circle.png" alt="">
+        <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
+            <h2 class=" ms-[150px] mt-[272px] font-black leading-[59.35px] text-5xl ">Stay Private. Stay<br> in
+                Control.</h2>
+            <p class="ms-[150px] font-light text-base">Chin-wag empowers you with the ability to request<br>
+                information from the resource marketplace without<br> revealing your
+                Identity.</p>
+            <p class="ms-[150px] font-light text-base">Review applications and schedule introductions with<br> total
+                discretion.</p>
+        </div>
+        <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
+            <img class="me-2" src="/assets/images/png/3rd-sec-img.png" alt="">
+        </div>
 
-
-        </section>
-        <!-- ======3cards===close=== -->
-        <section class="flex relative">
-            <img class="absolute top-20 left-0" src="/assets/images/png/circle.png" alt="">
-            <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
-                <h2 class=" ms-[150px] mt-[272px] font-black leading-[59.35px] text-5xl ">Stay Private. Stay<br> in
-                    Control.</h2>
-                <p class="ms-[150px] font-light text-base">Chin-wag empowers you with the ability to request<br>
-                    information from the resource marketplace without<br> revealing your
-                    Identity.</p>
-                <p class="ms-[150px] font-light text-base">Review applications and schedule introductions with<br> total
-                    discretion.</p>
-            </div>
-            <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
-                <img class="me-2" src="/assets/images/png/3rd-sec-img.png" alt="">
-            </div>
-
-        </section>
-        <section class="flex relative">
-      <img class="absolute bottom-60 right-10" src="/assets/images/png/cross.png" alt="">
-            <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
-                <img class="me-2" src="/assets/images/png/lst-sec-img.png" alt="">
-            </div>
-            <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
-                <h2 class=" ms-[150px] mt-[272px] font-black leading-[59.35px] text-5xl ">Commitment to Transparency</h2>
-                <p class="ms-[150px] font-light text-base">Marketing platforms, and agencies, can inadvertently<br> inflate your partnership costs by charging hidden<br> fees.</p>
-                <p class="ms-[150px] font-light text-base">We’ve put a stop to that problem.</p>
-                <p class="ms-[150px] font-light text-base">With charge-free & efficient matchmaking, we ensure<br> partnership costs are never more than they would have<br> otherwise
+    </section>
+    <section class="flex relative">
+        <img class="absolute bottom-60 right-10" src="/assets/images/png/cross.png" alt="">
+        <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
+            <img class="me-2" src="/assets/images/png/lst-sec-img.png" alt="">
+        </div>
+        <div class="lg:w-5/12 md:w-6/12 sm:w-full w-full">
+            <h2 class=" ms-[150px] mt-[272px] font-black leading-[59.35px] text-5xl ">Commitment to Transparency</h2>
+            <p class="ms-[150px] font-light text-base">Marketing platforms, and agencies, can inadvertently<br> inflate
+                your partnership costs by charging hidden<br> fees.</p>
+            <p class="ms-[150px] font-light text-base">We’ve put a stop to that problem.</p>
+            <p class="ms-[150px] font-light text-base">With charge-free & efficient matchmaking, we ensure<br>
+                partnership costs are never more than they would have<br> otherwise
                 been, even if created directly or through<br> referral.</p>
-            </div>
-         
-        
-        </section>
+        </div>
 
 
-    </body>
+    </section> -->
+
+
+</body>
 
 </html>
