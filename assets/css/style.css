@@ -44,3 +44,9 @@ body {
     position: unset !important;
   }
 }
+
+@media (max-width:500px) {
+.left_25{
+  left: 25% !important;
+}
+}
