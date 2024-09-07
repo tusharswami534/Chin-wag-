@@ -49,4 +49,7 @@ body {
 .left_25{
   left: 25% !important;
 }
+.max-xs-mt-0{
+margin-top: 0 !important;
+}
 }
