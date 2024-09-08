@@ -28,55 +28,44 @@
 
 <body>
     <!-- header -->
-    <section>
-        <div class="max-w-[1140px] px-3 flex mt-3 justify-between relative z-10 mx-auto">
-            <div class="logo max-sm:ms-2">
-                <img class="max-sm:max-w-[32px]" src="./assets/images/svg/logo.svg" alt="logo">
-            </div>
-            <div class="flex  gap-5 ">
+    <section class="relative ">
+        <img class="absolute right-6 top-24 max-lg:hidden" src="./assets/images/png/down-arrow.png" alt="down-arrow">
+        <img src="./assets/images/png/mouse-scrol.png" alt="mouse-scrol" class="absolute right-6 max-md:hidden bottom-10 cursor-pointer">
+        <!-- header -->
+        <div 
+            class="flex flex-row absolute w-full  top-5 max-lg:px-3 left-1/2 translate-center justify-between max-w-[1140px] mx-auto">
+            <a href="/"><img class="max-sm:w-[32px]" src="./assets/images/svg/logo.svg" alt="logo"></a>
+            <div class="flex gap-5">
                 <button
-                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-[#7A9E9F] bg-[#7A9E9F] rounded-full text-white lg:text-base text-[14px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Require
+                    class="bg-[#7A9E9F] border border-[#7A9E9F] rounded-[65px] px-7 py-4 max-md:px-6 max-md:py-2 leading-[160%]  max-sm:py-1 whitespace-nowrap max-lg:text-sm max-md:text-[8px] text-white hover:text-[#7A9E9F] hover:bg-white  transition-all duration-300 text-base">Require
                     Resources?</button>
                 <button
-                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-[#7A9E9F] bg-[#7A9E9F] rounded-full text-white lg:text-base text-[14px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Provide
+                    class="bg-[#7A9E9F] border border-[#7A9E9F] rounded-[65px] px-7 py-4 max-md:px-6 max-md:py-2 leading-[160%]  max-sm:py-1 whitespace-nowrap max-lg:text-sm max-md:text-[8px] text-white hover:text-[#7A9E9F] hover:bg-white  transition-all duration-300 text-base">Provide
                     Resources?</button>
             </div>
         </div>
-        <div class="row  flex justify-between lg:flex-row flex-col">
-            <div class="lg:w-6/12 w-full relative -top-20">
-                <div class="bg-[#4F6367] lg:min-h-screen h-[207px] w-full rounded-e-2xl px-20">
-                    <div class="hero_img ">
-                        <img class="absolute lg:top-40 top-28 lg:-end-28 end-3 z-10 md:max-w-[715px] max-w-[94%]"
-                            src="./assets/images/png/top-sec-img.png" alt="image">
-                        <img class="absolute lg:top-36 top-[100px]  lg:-end-20  end-0  max-sm:max-w-[52px]"
-                            src="./assets/images/png/doted-.png" alt="dote">
-
-                    </div>
+        <!-- header-end -->
+        <div  class="flex-wrap flex">
+            <div class="bg-[#4F6367] w-6/12 lg:pb-24  rounded-e-xl  lg:pt-52 flex lg:justify-end justify-center   max-lg:w-full">
+                <div class="relative max-lg:translate-y-40 max-sm:translate-y-24 lg:translate-x-28 w-max">
+                    <img src="./assets/images/png/top-sec-img.png" alt="dote" class="relative z-10">
+                    <img src="./assets/images/png/doted-.png" alt="dote" class="absolute -top-2 right-10">
                 </div>
             </div>
-            <div
-                class="lg:w-6/12 w-full relative  flex flex-col justify-center items-center lg:pt-0 sm:pt-64 pt-24 px-10">
-                <img class="  max-lg:hidden top-0 absolute end-4" src="./assets/images/png/down-arrow.png" alt="">
-                <h1
-                    class="lg:text-[46px] text-[30px] leading-[50px] font-extrabold max-w-[419px] text-center max-lg:mt-10 max-xs-mt-0 max-sm:mt-28 max-lg:max-w-[273px] max-lg:leading-8">
-                    Introductions that save you
-                    money.</h1>
-                <p
-                    class="max-w-[409px] mx-auto mt-8  lg:text-base max-lg:text-center text-sm font-light max-lg:max-w-[290px] max-lg:mt-4 ">
-                    Avoid inflated
-                    costs, keep your
-                    identity hidden
-                    while searching for
-                    Partners, and get rewarded for paying on-time.</p>
-                <div class="pt-11"><button
-                        class="py-4 px-5 border border-[#7A9E9F] -ms-48 max-lg:ms-0 rounded-full bg-[#7A9E9F]  text-white lg:text-base text-[14px] hover:bg-white hover:text-[#7A9E9F] duration-300 hover:ease-linear">Publish
-                        your
-                        Requirement</button></div>
-                <img class="max-lg:hidden bottom-[7%] absolute end-0" src="./assets/images/png/mouse-scrol.png"
-                    alt="scroll">
-            </div>
+            <div class="w-6/12 pb-24 justify-center items-center max-md:pb-20 max-sm:pb-14 max-md:pt-36 flex pt-52 max-lg:pt-44 px-4 max-lg:w-full">
+                <div class="max-w-[419px]">
+                    <p class="font-extrabold leading-[120%] text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Introductions that save you money.</p>
+                    <p class="leading-[175%] text-base font-light max-w-[370px] mt-3 mb-7">Avoid inflated costs, keep your identity hidden while searching for Partners, and get rewarded
+                        for
+                        paying on-time.</p>
+                    <button class="py-4 px-5 hover:bg-white hover:text-[#4F6367] transition-all duration-300  max-lg:py-3 max-lg:px-4 max-md::text-sm   bg-[#4F6367] text-white border border-[#4F6367] rounded-[65px]">Publish
+                        your Requirement</button>
+                </div>
 
+            </div>
         </div>
+
+
     </section>
     <!-- Card Section -->
     <section class=" relative flex justify-center flex-col items-center ">
@@ -206,9 +195,9 @@
         </div>
     </section>
     <!-- Time line -->
-    <section style="background-image: url(./assets/images/png/Time_line_bg_images.png);" class="pt-20 max-lg:py-16 max-sm:py-14">
+    <section style="background-image: url(./assets/images/png/Time_line_bg_images.png);" class="pt-36 max-lg:py-16 max-sm:py-14">
         <p class="text-xl max-lg:text-lg max-md:text-base max-sm:text-sm leading-[117%] text-cadet text-center">The Best Business Partnerships</p>
-        <h1 class="text-charcoal font-extrabold text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl text-center">Start with a Chin-Wag</h1>
+        <h1 class="text-charcoal font-extrabold text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl mb-28 max-lg:mb-0 text-center">Start with a Chin-Wag</h1>
         <div class="max-xl:max-w-[1140px] max-lg:max-w-[992px] max-md:max-w-[768px] max-sm:max-w-[540px]  max-w-[1320px]  mx-auto min-h-[439px] flex flex-col  ">
             <div
                 class="flex mt-20 px-12 gap-y-20 flex-wrap justify-center items-center max-lg:flex-col flex-row relative">
